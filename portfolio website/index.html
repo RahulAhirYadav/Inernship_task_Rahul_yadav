@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center bg-dark text-white py-5">
+        <div class="container">
+            <h1>Hi, I'm a <span class="text-warning">Python Django Developer</span></h1>
+            <p class="lead">Building robust web applications with modern technologies.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class=" text-success">About Me</h2>
+            <p>Hello! I’m a passionate and dedicated web developer with a Bachelor of Technology (B.Tech) degree. My expertise lies in creating dynamic, responsive, and user-centered web applications using Python, Django, REST API, CSS, and ReactJS. With a strong foundation in both backend and frontend development, I enjoy building seamless user experiences and tackling complex programming challenges.</p>
+            <p>I am committed to continuous learning and staying updated with the latest trends in web development. My goal is to deliver efficient, scalable, and well-documented code for every project, ensuring a top-notch user experience.</p>
+            <p>Whether working on an eCommerce platform, a blog website, or a custom web application, I bring a creative approach and attention to detail to all my projects. Let's build something great together!</p>
+</section>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container text-center">
+            <h2 class=" text-success">Skills</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="skill-card p-3 bg-dark text-white rounded">Python & Django</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card p-3 bg-dark text-white rounded">CSS & Responsive Design</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card p-3 bg-dark text-white rounded">REST API Development</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card p-3 bg-dark text-white rounded">ReactJS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class=" text-success">Projects</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Website</h5>
+                            <p class="card-text">A blogging platform with user authentication, posts, and comments.</p>
+                            <a href="https://github.com/RahulAhirYadav/Blog_project" class="btn btn-dark">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title ">eCommerce Platform</h5>
+                            <p class="card-text">An online store with add-to-cart, checkout, and payment integration.</p>
+                            <a href="https://github.com/RahulAhirYadav/Ecommerce_project" class="btn btn-dark">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stopwatch App</h5>
+                            <p class="card-text">A stopwatch application built with HTML, CSS, and JavaScript.</p>
+                            <a href="https://github.com/RahulAhirYadav/Inernship_task" class="btn btn-dark">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class=" text-success">Services</h2>
+        <div class="services-container ">
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>End-to-end web application development tailored to your business needs.</p>
+        </div>
+        <div class="service-card">
+            <h3>API Integration</h3>
+            <p>Seamless REST API design and integration for your applications.</p>
+        </div>
+        <div class="service-card">
+            <h3>Freelancing</h3>
+            <p>Flexible solutions for startups, businesses, and individuals.</p>
+        </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class=" text-success">Contact Me</h2>
+            <form id="contact-form" class="mt-4">
+                <div class="mb-3">
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-links mt-3">
+                <a href="https://github.com/RahulAhirYadav" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="linkedin.com/in/rahul-yadav-5251b5240" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://wa.me/6260065139" target="_blank" class="text-white mx-2" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>

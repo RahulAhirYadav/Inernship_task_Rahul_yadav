@@ -1,0 +1,367 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    background: #444;
+    padding: 1rem 0;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #666;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to bottom, #333, #666);
+    color: white;
+    padding: 5rem 1rem;
+}
+
+.hero .highlight {
+    color: #ff6347;
+}
+
+.btn {
+    background: #ff6347;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e04d2b;
+}
+
+/* Sections */
+section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.about, .skills, .services {
+    background: #f9f9f9;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: #444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Services Section Styling */
+.services {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+   
+}
+
+
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    gap: 2rem; /* Add space between cards */
+}
+
+.service-card {
+   
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px; /* Fixed width for uniformity */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff6347;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+}
+
+/* Projects Section */
+.projects {
+    background: #f9f9f9;
+    text-align: center;
+    
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+    
+  
+}
+.card h5 {
+    
+    color: #ff6347;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color:beige;
+}
+
+
+
+
+
+.card .btn {
+    background: #ff6347;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+    background: #e04d2b;
+}
+
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #ff6347;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #e04d2b;
+}
+/* Add custom styling */
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.skill-card, .service-card {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Default (Desktop) Styles are already included above */
+
+/* Medium Devices (Tablets: Width 768px and below) */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skills ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Projects Section */
+    .project-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 100%; /* Full width */
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+/* Small Devices (Mobile Phones: Width 480px and below) */
+@media screen and (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Skills Section */
+    .skills ul {
+        gap: 0.5rem;
+    }
+
+    .skills li {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Projects Section */
+    .project-card {
+        width: 100%; /* Full width */
+        margin: auto;
+    }
+
+    /* Contact Form */
+    .contact form {
+        width: 90%; /* Reduce form width */
+    }
+
+    .contact input, .contact textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+

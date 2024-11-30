@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Form Validation</title>
+    <script src="./Script.js"></script>
+</head>
+<body>
+    <h2 class="text-center bg-danger m-5">Registration Form</h2>
+<div class="container" style="width:60%; background-color: rgb(15, 229, 229); margin-top: 100px;">
+    
+    <form class="form-group form-normal" id="registerForm">
+    <div class="row">
+     <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Full Name</label>
+        <input type="text" class="form-control" id="name" onkeyup="checkPattern()" placeholder="Enter your name">
+        <span id="err1"></span>
+     </div>
+     <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Date Of Birth</label>
+        <input type="date" class="form-control" onblur="checkDob()" id="date" onblur="formValidation()">
+        <span id="err2"></span>
+     </div>
+     <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Gender</label>
+        <br>
+        <input type="radio" id="male"  name="gen"> Male&nbsp;&nbsp;<input type="radio" id="female"  name="gen"> Female
+        <span id="err3"></span>
+        <br>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-md-4 col-lg-4 col-xxl-4">
+        
+        <label>Email</label>
+        <input type="email" onkeyup="checkPattern()" class="form-control" id="email" placeholder="Enter your Email">
+        <span id="err4"></span>
+     </div>
+     <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Password</label>
+        <input type="password" class="form-control" onkeyup="checkPassword()" id="pass" placeholder="Enter password">
+        <span id="err5"></span>
+     </div>
+     <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" onkeyup="checkPassword()" id="cpass" placeholder="Re-Enter password">
+        <span id="err6"></span>
+     </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" onkeyup="checkMobile()" id="mobile" placeholder="Enter mobile number">
+        <span id="err7"></span>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Address</label> 
+        <input type="text" class="form-control" id="add" placeholder="Enter your address">
+        <span id="err8"></span>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xxl-4">
+        <label>Designation</label>
+        <input type="text" class="form-control" id="des" placeholder="Enter your designation">
+        <span id="err9"></span>
+        </div>
+    </div>
+       <br>
+       <br>
+    <div class="row text-center ">
+        <button type="submit" class="bg-primary" onclick="formValidation(event)">Register</button>
+    </div> 
+    </form>
+</div>
+</body>
+</html>

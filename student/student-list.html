@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information List</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Student System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="dynamicNavbar">
+                    <!-- Links will be dynamically rendered -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Student List -->
+    <div class="container mt-5">
+        <h2 class="text-center">Student Information List</h2>
+        <div class="mb-3">
+            <input type="text" id="search" class="form-control" placeholder="Search by Name, Age, or Grade">
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Profile Picture</th>
+                    <th>AddBy</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="student-table-body">
+                <!-- Rows will be dynamically inserted here -->
+                
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer  py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-links mt-3">
+                <a href="https://github.com/RahulAhirYadav" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://linkedin.com/in/rahul-yadav-5251b5240" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://wa.me/6260065139" target="_blank" class="text-white mx-2" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

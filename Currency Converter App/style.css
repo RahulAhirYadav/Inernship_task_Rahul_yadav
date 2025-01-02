@@ -1,0 +1,21 @@
+body {
+    background-color: #6bfafa;
+}
+
+.card {
+    
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #77f1bd;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#convertedAmount {
+    font-size: 1.2rem;
+    font-weight: 500;
+}

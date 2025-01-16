@@ -8,12 +8,13 @@ def add_news():
    new_list.append(ls)
    print("add data susscefully")
 def show_news():
-   print("show all list of news_data")
+   
    for i in new_list:
       output="Title is :{}, detail is:{}, photo is:{}".format(i[0],i[1],i[2])
      #print(f"titel is:{i[0]}, detail is:{i[0]}, photo is{i[0]}")
       print(output)
 def main():
+ 
  print("************ Select your choiche ***************")
  print("Add new Details then enter : 1")
  print("show all  News List then enter : 2")
